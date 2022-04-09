@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import FirstPlugin from './plugins'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(FirstPlugin)
+
+app.mount('#app')
